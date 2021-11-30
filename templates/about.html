@@ -1,0 +1,27 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>About me </h1>
+<form  method="post" action="/about">
+    <input type="text" name="contact-name" placeholder="Enter your name">
+    <input type="text" name="contact-surname" placeholder="Enter your last name">
+    <input type="email" name="contact-mail" placeholder="Enter your e-mail">
+    <input type="text" name="contact-adress" placeholder="Enter your adress">
+    <br>
+
+    <select name="city" >
+        <option value="Zagreb">Zagreb</option>
+        <option value="Rijeka">Rijeka</option>
+        <option value="Split">Split</option>
+
+    </select>
+    <br>
+
+    <textarea name="contact-message" placeholder="Enter your massage"></textarea>
+    <br>
+    <button type="submit">Send</button>
+</form>
+
+{% endblock content %}

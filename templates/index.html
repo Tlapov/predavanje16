@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>Hello, ovo je index.html</p>
+
+<p>Trenutna godina: {{year}}</p>
+<p>Trenutna godina: {{poruka}}</p>
+
+{% for x in gradovi %}
+    <p>{{x}}</p>
+{% endfor %}
+
+{% if user %}
+    <h2> Hello {{user}} !!! Nice to se you</h2>
+{°% else %}
+    <p>User not in html</p>
+{% endblock content %}
